@@ -1,0 +1,74 @@
+.slidebackground {
+  position: static;
+}
+.slidebackground .test {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+}
+.slidebackground .background1,
+.slidebackground .background2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.slidebackground .background1 {
+  opacity: 0;
+  width: 100%;
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+  -webkit-animation: animation 10s linear infinite 0s;
+}
+.slidebackground .background2 {
+  opacity: 0;
+  width: 100%;
+  background-image: url(../img/2.jpg);
+  background-size: cover;
+  -webkit-animation: animation 10s linear infinite 0s;
+  animation-delay: 5s;
+}
+.slidebackground:after {
+  content: '';
+  background: transparent url(../img/pattern.png) repeat top left;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+.slidebackground:before {
+  content: '';
+  background: url(../img/black-bg.png) repeat top left;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+@-webkit-keyframes animation {
+  0% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  20% {
+    opacity: 1;
+    -webkit-animation-timing-function: ease-in;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  100% {
+    opacity: 0;
+  }
+}
