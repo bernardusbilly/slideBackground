@@ -16,7 +16,7 @@
   -o-animation: animation 28s linear infinite;
   -ms-animation: animation 28s linear infinite;
   animation: animation 28s linear infinite;
-  background-position: center top;
+  background-position: center;
 }
 .slidebackground .bw {
   -webkit-filter: grayscale(100%);
