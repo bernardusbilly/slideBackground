@@ -27,7 +27,7 @@ Developed in Less CSS, this library helps the creation of slide background using
 	```
 
 ### Customize
-1. To change the number of photos used and length of time of each photo, open the slidebackground.less and change what is necessary
+1. To change the number of photos used and length of time of each photo, open the slidebackground.less and change what is necessary, then compile the less file to css file.
 	```
 	/* fill in part */
 
